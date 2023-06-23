@@ -1,0 +1,4 @@
+/Users/mayamoore/g4work/gamma_sim/gamma_sim-build/CMakeFiles/gamma_sim.dir
+/Users/mayamoore/g4work/gamma_sim/gamma_sim-build/CMakeFiles/GammaSimulation.dir
+/Users/mayamoore/g4work/gamma_sim/gamma_sim-build/CMakeFiles/edit_cache.dir
+/Users/mayamoore/g4work/gamma_sim/gamma_sim-build/CMakeFiles/rebuild_cache.dir

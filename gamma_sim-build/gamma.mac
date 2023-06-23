@@ -1,0 +1,48 @@
+/control/cout/ignoreThreadsExcept 0
+/control/verbose 2
+/run/verbose 1
+#
+#/testem/det/setMat Panel
+#/testem/det/setSize 0.25 m
+#
+#/testem/phys/addPhysics emlivermore
+#
+# /run/setCut 1 mm
+#
+/run/initialize
+#
+/gps/particle gamma
+/gps/energy 2614 keV
+/gps/position 0.0 0.0 0.05 m
+
+/gps/direction 0 0 -1
+
+/gps/ang/type iso
+/gps/ang/mintheta 0.0 deg
+/gps/ang/maxtheta 180.0 deg
+/gps/ang/minphi 0.0 deg
+/gps/ang/maxphi 360.0 deg
+
+
+/analysis/setFileName gamma
+#/testem/trackSecondaries true
+
+#
+/analysis/h1/set  1 100 0    30 cm  #step size
+/analysis/h1/set  2 100 0    3 MeV  #continuous Edeposited
+/analysis/h1/set  3 100 0 3 MeV  #Etransfered by ionisation
+/analysis/h1/set  4 100 0 3 MeV  #Etransfered by brems
+/analysis/h1/set  5 100 0 3 MeV  #Etransfered by (e+,e-) prod
+/analysis/h1/set  6 100 0 3 MeV  #total Etransfered
+/analysis/h1/set  7 100 0 3 MeV  #total Elost
+/analysis/h1/set  8 100 0 3 MeV    #energy balance
+/analysis/h1/set 10 100 0 3 MeV         #total Edep
+/analysis/h1/set 11 100 0 3 MeV  #gamma energy spectrum
+/analysis/h1/set 12 100 0 3 MeV  #e- energy spectrum
+/analysis/h1/set 13 100 0 3 MeV  #e+ energy spectrum
+/analysis/h1/set 14 130 -15  375 deg #phi direction
+/analysis/h1/set 15 110 -1.1 1.1 none #costheta direction
+
+#
+/run/printProgress 5000
+/run/beamOn 50000
